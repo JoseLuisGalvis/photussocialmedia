@@ -8,6 +8,7 @@ import {
   ChevronRight,
 } from "lucide-react";
 import photusLogo from "../assets/images/LogoPSM.png";
+import photusQR from "../assets/images/qrcode.png";
 
 const Footer = ({ darkMode }) => {
   const currentYear = new Date().getFullYear();
@@ -133,7 +134,7 @@ const Footer = ({ darkMode }) => {
               Escanea para WhatsApp
             </h6>
             <img
-              src="/src/assets/images/qrcode.png"
+              src={photusQR}
               alt="QR WhatsApp"
               className="img-fluid rounded-3"
               style={{ maxWidth: 150 }}
