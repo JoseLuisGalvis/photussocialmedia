@@ -1,44 +1,299 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-AR">
   <head>
+    <!-- ============================================
+         META TAGS ESENCIALES
+         ============================================ -->
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/photussocialmedia/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- ============================================
+         SEO BÁSICO
+         ============================================ -->
+    <title>
+      Photus Social Media | Fotografía Profesional & Contenido Digital en Buenos
+      Aires
+    </title>
     <meta
       name="description"
-      content="Photus Social Media - Creatividad que impulsa tu marca. Diseño gráfico, gestión de redes sociales y marketing digital."
+      content="Transformamos ideas en experiencias visuales. Fotografía profesional, video aéreo con drones, producción para YouTube y contenido estratégico para redes sociales en Buenos Aires, Argentina."
     />
     <meta
       name="keywords"
-      content="diseño gráfico, social media, marketing digital, contenido, branding, Buenos Aires"
+      content="fotografía profesional, video aéreo, drones, producción YouTube, contenido redes sociales, marketing digital, Buenos Aires, Argentina"
     />
     <meta name="author" content="Photus Social Media" />
+    <meta
+      name="robots"
+      content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    />
+    <meta name="googlebot" content="index, follow" />
+    <link rel="canonical" href="https://www.photusocialmedia.com.ar" />
 
-    <!-- Open Graph / Facebook -->
+    <!-- ============================================
+         OPEN GRAPH (Facebook, LinkedIn, WhatsApp)
+         ============================================ -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://photus.com/" />
+    <meta property="og:site_name" content="Photus Social Media" />
     <meta
       property="og:title"
       content="Photus Social Media - Creatividad que Impulsa tu Marca"
     />
     <meta
       property="og:description"
-      content="Diseño, estrategia y contenido que convierte seguidores en clientes"
+      content="Fotografía profesional, video aéreo y contenido digital que convierte seguidores en clientes. Descubre nuestros servicios."
+    />
+    <meta property="og:url" content="https://www.photusocialmedia.com.ar" />
+    <meta
+      property="og:image"
+      content="https://www.photusocialmedia.com.ar/og-image.jpg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Photus Social Media - Fotografía y Video Profesional"
+    />
+    <meta property="og:locale" content="es_AR" />
+
+    <!-- ============================================
+         TWITTER CARDS
+         ============================================ -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@photusocialmedia" />
+    <meta name="twitter:creator" content="@photusocialmedia" />
+    <meta
+      name="twitter:title"
+      content="Photus Social Media - Fotografía & Video Profesional"
+    />
+    <meta
+      name="twitter:description"
+      content="Creatividad que impulsa tu marca. Fotografía, video aéreo y contenido digital en Buenos Aires."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.photusocialmedia.com.ar/twitter-card.jpg"
     />
 
-    <!-- Google Fonts -->
+    <!-- ============================================
+         SCHEMA.ORG JSON-LD (Rich Snippets)
+         ============================================ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://www.photusocialmedia.com.ar/#organization",
+        "name": "Photus Social Media",
+        "alternateName": "Photus",
+        "description": "Agencia de fotografía profesional, video aéreo con drones y producción de contenido digital para redes sociales",
+        "url": "https://www.photusocialmedia.com.ar",
+        "logo": "https://www.photusocialmedia.com.ar/logo.png",
+        "image": [
+          "https://www.photusocialmedia.com.ar/images/hero.jpg",
+          "https://www.photusocialmedia.com.ar/images/portfolio-1.jpg"
+        ],
+        "telephone": "+54-9-11-1234-5678",
+        "email": "contacto@photusocialmedia.com.ar",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Av. Corrientes 1234",
+          "addressLocality": "Buenos Aires",
+          "addressRegion": "CABA",
+          "postalCode": "C1043",
+          "addressCountry": "AR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "-34.603722",
+          "longitude": "-58.381592"
+        },
+        "areaServed": {
+          "@type": "GeoCircle",
+          "geoMidpoint": {
+            "@type": "GeoCoordinates",
+            "latitude": "-34.603722",
+            "longitude": "-58.381592"
+          },
+          "geoRadius": "50000"
+        },
+        "priceRange": "$$-$$$",
+        "openingHours": "Mo-Fr 09:00-18:00",
+        "sameAs": [
+          "https://www.instagram.com/photusocialmedia",
+          "https://www.facebook.com/photusocialmedia",
+          "https://www.linkedin.com/company/photusocialmedia"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+54-9-11-1234-5678",
+          "contactType": "customer service",
+          "email": "contacto@photusocialmedia.com.ar",
+          "availableLanguage": ["Spanish", "English"]
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Servicios Photus",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Fotografía Profesional",
+                "description": "Sesiones de producto, fotografía corporativa, eventos y retratos profesionales"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Video Aéreo con Drones",
+                "description": "Tomas aéreas profesionales, videos panorámicos e inspección de propiedades"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Producción para YouTube",
+                "description": "Edición profesional, motion graphics y optimización SEO para YouTube"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Contenido para Redes Sociales",
+                "description": "Reels, Stories, posts y estrategia de contenido mensual"
+              }
+            }
+          ]
+        }
+      }
+    </script>
+
+    <!-- WebSite Schema (Buscador interno) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "url": "https://www.photusocialmedia.com.ar",
+        "name": "Photus Social Media",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.photusocialmedia.com.ar/buscar?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
+
+    <!-- ============================================
+         FAVICONS (Multi-dispositivo)
+         ============================================ -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#fc7826" />
+    <meta name="msapplication-TileColor" content="#fc7826" />
+    <meta name="msapplication-config" content="/browserconfig.xml" />
+
+    <!-- ============================================
+         PRECONNECT & DNS-PREFETCH (Performance)
+         ============================================ -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+
+    <!-- ============================================
+         GOOGLE FONTS (Optimizado)
+         ============================================ -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap"
       rel="stylesheet"
     />
 
-    <title>Photus Social Media</title>
-    <script type="module" crossorigin src="/photussocialmedia/assets/index-Bakzd1N6.js"></script>
-    <link rel="stylesheet" crossorigin href="/photussocialmedia/assets/index-GZhA6BeX.css">
+    <!-- ============================================
+         AOS (Animate On Scroll)
+         ============================================ -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- ============================================
+         ESTILOS CRÍTICOS (Inline para First Paint)
+         ============================================ -->
+    <style>
+      /* Critical CSS - Above the fold */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+          sans-serif;
+        line-height: 1.6;
+        color: #111111;
+        overflow-x: hidden;
+      }
+
+      .hero-section {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(
+          135deg,
+          rgba(243, 140, 140, 0.5),
+          rgba(131, 213, 208, 0.5)
+        );
+      }
+    </style>
+
+    <!-- ============================================
+         GOOGLE ANALYTICS (opcional)
+         ============================================ -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!--
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    -->
+
+    <!-- ============================================
+         FACEBOOK PIXEL (opcional)
+         ============================================ -->
+    <!--
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', 'TU_PIXEL_ID');
+      fbq('track', 'PageView');
+    </script>
+    <noscript>
+      <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=TU_PIXEL_ID&ev=PageView&noscript=1"/>
+    </noscript>
+    -->
+    <script type="module" crossorigin src="/photussocialmedia/assets/index-ClENi7Dy.js"></script>
+    <link rel="stylesheet" crossorigin href="/photussocialmedia/assets/index-biLwHrPp.css">
   </head>
+
   <body>
     <div id="root"></div>
+
+    <!-- Scripts cargados de forma asíncrona -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
   </body>
 </html>
