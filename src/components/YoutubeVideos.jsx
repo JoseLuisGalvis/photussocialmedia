@@ -61,9 +61,9 @@ const YoutubeVideos = () => {
         {/* YOUTUBE VIDEOS (3 en fila) */}
         <div className="row g-4 mb-4 w-100" data-aos="zoom-in">
           {[
-            "https://www.youtube.com/embed/mNpIyfODpxg?si=u7b3JU-_mJQqGaKX",
-            "https://www.youtube.com/embed/mNpIyfODpxg?si=u7b3JU-_mJQqGaKX",
-            "https://www.youtube.com/embed/mNpIyfODpxg?si=u7b3JU-_mJQqGaKX",
+            "https://www.youtube.com/embed/6e6kqhvU3FQ?si=JphwISKJCtHn4xlT",
+            "https://www.youtube.com/embed/JLUBg9YF0Bc?si=8xoeS2Oz9aAYamFT",
+            "https://www.youtube.com/embed/e7PXoXJcfrM?si=tb4OSwNY5NbLWz_H",
           ].map((url, i) => (
             <div key={i} className="col-lg-4 col-md-6 col-12">
               <div

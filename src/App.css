@@ -586,6 +586,41 @@ a.btn.btn-lg.hero-cta:hover {
   box-shadow: 0 8px 20px rgba(246, 129, 70, 0.6) !important;
 }
 
+/*   RSS Content   */
+.insta-wrapper {
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.insta-wrapper:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
+}
+
+/* Tooltip */
+.insta-wrapper::after {
+  content: "Haz click para ver la publicación";
+  position: absolute;
+  bottom: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  padding: 6px 10px;
+  font-size: 12px;
+  border-radius: 6px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease, bottom 0.25s ease;
+}
+
+.insta-wrapper:hover::after {
+  opacity: 1;
+  bottom: -45px;
+}
+
 /* ===========================
    CONTACT SECTION
    =========================== */

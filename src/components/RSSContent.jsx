@@ -1,195 +1,203 @@
 import React from "react";
 import bgRedes from "../assets/images/bg-redes.jpeg";
+import post1 from "../assets/images/post1.png";
+import post2 from "../assets/images/post1.png";
+import post3 from "../assets/images/post1.png";
 
 const RSSContent = () => {
   return (
-    <section
-      id="rss-content"
-      className="py-5 position-relative"
-      style={{
-        backgroundImage: `url(${bgRedes})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-      }}
-    >
-      {/* Overlay */}
-      <div
-        className="position-absolute top-0 start-0 w-100 h-100"
+    <>
+      {/* CSS del tooltip + animación */}
+      <style>
+        {`
+          /* Animación de 10px en Y */
+          .insta-card {
+            transition: transform 0.35s ease;
+            position: relative;
+          }
+
+          .insta-card:hover {
+            transform: translateY(-10px);
+          }
+
+          /* Tooltip SOLO en Desktop */
+          @media (min-width: 992px) {
+            .insta-card::after {
+              content: "Haz click para ver la publicación";
+              position: absolute;
+              bottom: -35px;
+              left: 50%;
+              transform: translateX(-50%);
+              background: rgba(0, 0, 0, 0.85);
+              color: #fff;
+              padding: 6px 10px;
+              font-size: 12px;
+              white-space: nowrap;
+              border-radius: 6px;
+              opacity: 0;
+              pointer-events: none;
+              transition: opacity 0.25s ease;
+            }
+
+            .insta-card:hover::after {
+              opacity: 1;
+            }
+          }
+        `}
+      </style>
+
+      <section
+        id="rss-content"
+        className="py-5 position-relative"
         style={{
-          background: "rgba(0,0,0,0.55)",
-          backdropFilter: "blur(2px)",
-          zIndex: 1,
+          backgroundImage: `url(${bgRedes})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
         }}
-      ></div>
-
-      <div
-        className="container min-vh-100 d-flex flex-column justify-content-center align-items-center text-center position-relative"
-        style={{ zIndex: 2 }}
       >
-        <h2 data-aos="fade-up" className="text-white mb-3 fw-bold">
-          <span className="border-bottom border-orange border-3 pb-1">
-            Sobre Contenido de Redes Sociales
-          </span>
-        </h2>
+        {/* Overlay */}
+        <div
+          className="position-absolute top-0 start-0 w-100 h-100"
+          style={{
+            background: "rgba(0,0,0,0.55)",
+            backdropFilter: "blur(2px)",
+            zIndex: 1,
+          }}
+        ></div>
 
-        <p
-          data-aos="fade-up"
-          className="text-white mb-4"
-          style={{ maxWidth: "650px" }}
+        <div
+          className="container min-vh-100 d-flex flex-column justify-content-center align-items-center text-center position-relative"
+          style={{ zIndex: 2 }}
         >
-          Diseño y producción de contenido estratégico para Instagram, TikTok y
-          Facebook: reels, carruseles, posts y branding visual.
-        </p>
+          <h2 data-aos="fade-up" className="text-white mb-3 fw-bold">
+            <span className="border-bottom border-orange border-3 pb-1">
+              Sobre Contenido de Redes Sociales
+            </span>
+          </h2>
 
-        {/* Highlights */}
-        <div className="row mb-4 w-100" data-aos="fade-up">
-          <div className="col-md-4 text-white mb-3">
-            <h5 className="fw-bold">📅 Calendario Editorial</h5>
-            <p className="text-white small">
-              Organización y estrategia mensual.
-            </p>
+          <p
+            data-aos="fade-up"
+            className="text-white mb-4"
+            style={{ maxWidth: "650px" }}
+          >
+            Diseño y producción de contenido estratégico para Instagram, TikTok
+            y Facebook: reels, carruseles, posts y branding visual.
+          </p>
+
+          {/* Highlights */}
+          <div className="row mb-4 w-100" data-aos="fade-up">
+            <div className="col-md-4 text-white mb-3">
+              <h5 className="fw-bold">📅 Calendario Editorial</h5>
+              <p className="text-white small">
+                Organización y estrategia mensual.
+              </p>
+            </div>
+            <div className="col-md-4 text-white mb-3">
+              <h5 className="fw-bold">🎨 Diseño Profesional</h5>
+              <p className="text-white small">
+                Posts, carruseles y reels de alto impacto.
+              </p>
+            </div>
+            <div className="col-md-4 text-white mb-3">
+              <h5 className="fw-bold">🔥 Estrategia de Crecimiento</h5>
+              <p className="text-white small">
+                Alcance, engagement y conversión.
+              </p>
+            </div>
           </div>
-          <div className="col-md-4 text-white mb-3">
-            <h5 className="fw-bold">🎨 Diseño Profesional</h5>
-            <p className="text-white small">
-              Posts, carruseles y reels de alto impacto.
-            </p>
+
+          {/* 3 Mini Mockups */}
+          <div className="d-flex gap-4 mb-5" data-aos="fade-up">
+            {/* 1 */}
+            <a
+              href="https://www.instagram.com/p/DRvlr59DEDX/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="insta-card"
+              style={{
+                width: "160px",
+                height: "240px",
+                display: "block",
+                background: "#fff",
+                borderRadius: "14px",
+                overflow: "hidden",
+              }}
+            >
+              <img
+                src={post1}
+                alt="Publicación 1"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                }}
+              />
+            </a>
+
+            {/* 2 */}
+            <a
+              href="https://www.instagram.com/p/DRvlr59DEDX/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="insta-card"
+              style={{
+                width: "160px",
+                height: "240px",
+                display: "block",
+                background: "#fff",
+                borderRadius: "14px",
+                overflow: "hidden",
+              }}
+            >
+              <img
+                src={post2}
+                alt="Publicación 2"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                }}
+              />
+            </a>
+
+            {/* 3 */}
+            <a
+              href="https://www.instagram.com/reel/DRvlr59DEDX/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="insta-card"
+              style={{
+                width: "160px",
+                height: "240px",
+                display: "block",
+                background: "#fff",
+                borderRadius: "14px",
+                overflow: "hidden",
+              }}
+            >
+              <img
+                src={post3}
+                alt="Publicación 3"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                }}
+              />
+            </a>
           </div>
-          <div className="col-md-4 text-white mb-3">
-            <h5 className="fw-bold">🔥 Estrategia de Crecimiento</h5>
-            <p className="text-white small">
-              Alcance, engagement y conversión.
-            </p>
-          </div>
+
+          {/* CTA */}
+          <button
+            data-aos="fade-up"
+            className="btn btn-orange fw-bold px-4 py-2 mt-4"
+          >
+            Quiero Contenido Profesional
+          </button>
         </div>
-
-        {/* Minimalista Premium Mockups */}
-        <div className="d-flex gap-4 mb-5" data-aos="fade-up">
-          {/* Mockup Reel / TikTok */}
-          <div
-            className="rounded-4 bg-white shadow-lg d-flex flex-column justify-content-end p-2"
-            style={{
-              width: "110px",
-              height: "200px",
-              opacity: 0.95,
-            }}
-          >
-            <div
-              style={{
-                background: "#e8e8e8",
-                height: "80%",
-                borderRadius: "12px",
-              }}
-            ></div>
-            <div className="mt-2">
-              <div
-                style={{
-                  height: "6px",
-                  background: "#ddd",
-                  borderRadius: "5px",
-                }}
-              ></div>
-              <div
-                style={{
-                  height: "6px",
-                  width: "60%",
-                  background: "#ddd",
-                  borderRadius: "5px",
-                  marginTop: "4px",
-                }}
-              ></div>
-            </div>
-          </div>
-
-          {/* Mockup Carrusel */}
-          <div
-            className="rounded-4 bg-white shadow-lg p-2"
-            style={{
-              width: "140px",
-              height: "200px",
-              opacity: 0.95,
-            }}
-          >
-            <div
-              style={{
-                background: "#e8e8e8",
-                height: "65%",
-                borderRadius: "12px",
-              }}
-            ></div>
-            <div className="mt-2">
-              <div
-                style={{
-                  height: "6px",
-                  background: "#ddd",
-                  borderRadius: "5px",
-                }}
-              ></div>
-              <div
-                style={{
-                  height: "6px",
-                  width: "70%",
-                  background: "#ddd",
-                  borderRadius: "5px",
-                  marginTop: "4px",
-                }}
-              ></div>
-              <div
-                style={{
-                  height: "6px",
-                  width: "50%",
-                  background: "#ddd",
-                  borderRadius: "5px",
-                  marginTop: "4px",
-                }}
-              ></div>
-            </div>
-          </div>
-
-          {/* Mockup Post estático */}
-          <div
-            className="rounded-4 bg-white shadow-lg p-2"
-            style={{
-              width: "110px",
-              height: "200px",
-              opacity: 0.95,
-            }}
-          >
-            <div
-              style={{
-                background: "#e8e8e8",
-                height: "75%",
-                borderRadius: "12px",
-              }}
-            ></div>
-            <div className="mt-2">
-              <div
-                style={{
-                  height: "6px",
-                  background: "#ddd",
-                  borderRadius: "5px",
-                }}
-              ></div>
-              <div
-                style={{
-                  height: "6px",
-                  width: "80%",
-                  background: "#ddd",
-                  borderRadius: "5px",
-                  marginTop: "4px",
-                }}
-              ></div>
-            </div>
-          </div>
-        </div>
-
-        {/* CTA */}
-        <button data-aos="fade-up" className="btn btn-orange fw-bold px-4 py-2">
-          Quiero Contenido Profesional
-        </button>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 

@@ -1,9 +1,9 @@
 import React from "react";
 import bgAereo from "../assets/video/phothusvideo.mp4"; // o imagen optimizada
-import img1 from "../assets/images/phothusLogo.jpeg";
-import img2 from "../assets/images/phothusLogo.jpeg";
-import img3 from "../assets/images/phothusLogo.jpeg";
-import img4 from "../assets/images/phothusLogo.jpeg";
+import img1 from "../assets/images/fa1.jpeg";
+import img2 from "../assets/images/fa2.jpeg";
+import img3 from "../assets/images/fa3.jpg";
+import img4 from "../assets/images/fa4.jpeg";
 
 const AirProducts = () => {
   return (
