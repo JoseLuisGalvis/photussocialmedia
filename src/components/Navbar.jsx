@@ -41,6 +41,8 @@ const Navbar = ({ darkMode, toggleDarkMode, scrollToSection }) => {
           <img
             src={photusLogo}
             alt="Phothus Social Media"
+            loading="lazy"
+            decoding="async"
             className="logo-icon"
             style={{
               height: "40px",

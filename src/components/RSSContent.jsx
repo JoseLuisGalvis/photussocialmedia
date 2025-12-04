@@ -178,6 +178,8 @@ const RSSContent = () => {
             >
               <img
                 src={post3}
+                loading="lazy"
+                decoding="async"
                 alt="Publicación 3"
                 style={{
                   width: "100%",

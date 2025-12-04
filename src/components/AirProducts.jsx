@@ -85,6 +85,8 @@ const AirProducts = () => {
             <img
               key={i}
               src={img}
+              loading="lazy"
+              decoding="async"
               alt="Aerial photography"
               className="rounded shadow"
               style={{

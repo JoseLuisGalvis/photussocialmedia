@@ -66,6 +66,8 @@ const Photos = () => {
               key={i}
               src={img}
               alt="Mini gallery"
+              loading="lazy"
+              decoding="async"
               className="rounded"
               style={{
                 width: "180px",

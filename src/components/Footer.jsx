@@ -49,6 +49,7 @@ const Footer = ({ darkMode }) => {
                   alt="Phothus Social Media"
                   className="logo-icon"
                   loading="lazy"
+                  decoding="async"
                   style={{
                     height: "40px",
                     width: "auto",
