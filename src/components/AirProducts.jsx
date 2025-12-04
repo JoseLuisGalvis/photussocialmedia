@@ -33,12 +33,21 @@ const AirProducts = () => {
             Capturamos imágenes aéreas cinematográficas para turismo, real
             estate, eventos y contenido comercial de alto impacto.
           </p>
-          <button
-            className="btn btn-orange btn-lg fw-bold px-4 py-2"
+          {/* CTA Button con scroll suave */}
+          <a
+            href="#contact"
             data-aos="fade-up"
+            className="btn btn-orange fw-bold px-4 py-2"
+            onClick={(e) => {
+              e.preventDefault();
+              document.getElementById("contact")?.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+              });
+            }}
           >
             Cotizar vuelo
-          </button>
+          </a>
           <p className="small text-white-50 mt-2">
             Respuesta en menos de 15 minutos
           </p>

@@ -28,7 +28,7 @@ function App() {
     if (savedMode !== null) {
       return savedMode === "true";
     }
-    return window.matchMedia("(prefers-color-scheme: dark)").matches;
+    return false; // ✅ Light por defecto
   });
 
   useEffect(() => {

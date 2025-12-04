@@ -188,13 +188,21 @@ const RSSContent = () => {
             </a>
           </div>
 
-          {/* CTA */}
-          <button
+          {/* CTA Button con scroll suave */}
+          <a
+            href="#contact"
             data-aos="fade-up"
-            className="btn btn-orange fw-bold px-4 py-2 mt-4"
+            className="btn btn-orange fw-bold px-4 py-2"
+            onClick={(e) => {
+              e.preventDefault();
+              document.getElementById("contact")?.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+              });
+            }}
           >
             Quiero Contenido Profesional
-          </button>
+          </a>
         </div>
       </section>
     </>

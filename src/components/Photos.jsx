@@ -77,11 +77,21 @@ const Photos = () => {
             />
           ))}
         </div>
-
-        {/* CTA */}
-        <button data-aos="fade-up" className="btn btn-orange fw-bold px-4 py-2">
+        {/* CTA Button con scroll suave */}
+        <a
+          href="#contact"
+          data-aos="fade-up"
+          className="btn btn-orange fw-bold px-4 py-2"
+          onClick={(e) => {
+            e.preventDefault();
+            document.getElementById("contact")?.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }}
+        >
           Contactar
-        </button>
+        </a>
       </div>
     </section>
   );

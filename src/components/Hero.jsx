@@ -2,7 +2,7 @@ import phothusVideo from "../assets/video/phothusvideo.mp4";
 
 const Hero = () => {
   const handleCTAClick = () => {
-    const contactSection = document.getElementById("contact");
+    const contactSection = document.getElementById("services");
     if (contactSection) {
       const offset = 80;
       const elementPosition = contactSection.offsetTop - offset;
@@ -42,7 +42,7 @@ const Hero = () => {
           Diseño, estrategia y contenido que convierte seguidores en clientes
         </p>
         <a
-          href="#contact"
+          href="#services"
           className="btn btn-lg hero-cta"
           onClick={(e) => {
             e.preventDefault();
