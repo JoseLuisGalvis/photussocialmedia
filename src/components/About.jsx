@@ -46,19 +46,19 @@ const About = () => {
             data-aos="fade-right"
             data-aos-duration="1000"
           >
-            <p className="text-secondary mb-4 about-text">
+            <p className="mb-4 about-text">
               En <strong>Photus Social Media</strong>, transformamos ideas en
               experiencias visuales que conectan emocionalmente con tu
               audiencia. Somos más que una agencia de diseño: somos tu aliado
               estratégico en el mundo digital.
             </p>
-            <p className="text-secondary mb-4 about-text">
+            <p className="mb-4 about-text">
               Con años de experiencia creando contenido que convierte,
               entendemos que cada marca tiene su propia historia. Nuestro
               enfoque combina creatividad innovadora con estrategias basadas en
               datos para maximizar tu impacto en redes sociales.
             </p>
-            <p className="text-secondary about-text">
+            <p className="about-text">
               Desde branding hasta campañas completas de marketing digital,
               diseñamos soluciones personalizadas que no solo se ven increíbles,
               sino que generan resultados reales para tu negocio.
@@ -82,7 +82,7 @@ const About = () => {
                   <div className="p-4 border rounded-3 h-100 shadow-sm d-flex flex-column text-center about-card">
                     <div className="text-orange mb-3">{f.icon}</div>
                     <h5 className="fw-bold">{f.title}</h5>
-                    <p className="text-muted mb-0">{f.description}</p>
+                    <p className="mb-0">{f.description}</p>
                   </div>
                 </div>
               ))}

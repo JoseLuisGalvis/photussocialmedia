@@ -153,14 +153,14 @@ const Contact = () => {
             data-aos="fade-left"
             data-aos-delay="300"
           >
-            <div className="ratio ratio-16x9">
+            <div className="ratio ratio-1x1">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52560.59412168225!2d-58.463103!3d-34.603722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA%2C%20Argentina!5e0!3m2!1ses!2sus!4v1234567890123!5m2!1ses!2sus"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26233.945634332395!2d-58.267319461271114!3d-34.7242635937144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32e38e45f5777%3A0x6a86dac21334524f!2sQuilmes%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1764846324279!5m2!1ses-419!2sar"
                 allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 title="Ubicación Photus"
-              />
+              ></iframe>
             </div>
           </div>
         </div>

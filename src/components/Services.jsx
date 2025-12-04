@@ -92,14 +92,12 @@ const Services = () => {
                     {service.icon}
                   </div>
                   <h5 className="card-title fw-bold mb-3">{service.title}</h5>
-                  <p className="card-text text-secondary">
-                    {service.description}
-                  </p>
+                  <p className="card-text">{service.description}</p>
 
                   <h6 className="mt-4 mb-2 fw-semibold text-orange">
                     Incluye:
                   </h6>
-                  <ul className="list-unstyled mb-4 small text-muted flex-grow-1 card-list">
+                  <ul className="list-unstyled mb-4 small flex-grow-1 card-list">
                     {service.features.map((feature, idx) => (
                       <li key={idx} className="d-flex align-items-start mb-1">
                         <span className="text-success me-2">✓</span>
